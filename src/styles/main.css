@@ -105,3 +105,30 @@ h2 {
 .boxMatch::after {
     transform: rotateY(180deg);
 }
+
+@media (max-width: 375px) {
+    .container {
+        padding: 20px 30px;
+        gap: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .reset {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+
+    .game {
+        max-width: 300px;
+        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+        gap: 5px;
+    }
+
+    .item {
+        font-size: 2em;
+    }
+}
+
